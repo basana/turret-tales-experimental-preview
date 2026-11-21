@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Redeploy when the selected MAP NAVI experiment receives updates, including persistent POIs and high-contrast horizontal red GPS labels.
+# Redeploy selected MAP NAVI experiment: persistent POIs, red GPS labels, and compact Koblenz premium artwork viewer.
 
 on:
   workflow_dispatch:
