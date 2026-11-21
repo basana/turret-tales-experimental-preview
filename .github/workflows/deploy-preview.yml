@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Redeploy when the selected MAP NAVI experiment receives updates, including standard black-on-white GPS market label styling.
+# Redeploy when the selected MAP NAVI experiment receives updates, including POI persistence while panning and horizontal GPS labels.
 
 on:
   workflow_dispatch:
