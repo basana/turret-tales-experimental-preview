@@ -1,4 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
+# Redeploy when the selected source branch receives content-only updates.
 
 on:
   workflow_dispatch:
