@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Redeploy when the selected MAP NAVI experiment receives updates, including pin-label CSS fixes.
+# Redeploy when the selected MAP NAVI experiment receives updates, including horizontal pin-label enforcement.
 
 on:
   workflow_dispatch:
