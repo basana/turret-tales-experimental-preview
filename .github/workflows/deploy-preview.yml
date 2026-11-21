@@ -1,0 +1,41 @@
+name: Deploy Experimental MAP NAVI Preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: experimental-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the selected MAP NAVI experiment
+        uses: actions/checkout@v4
+        with:
+          repository: basana/turret-tales-preview
+          ref: map-navi/poi-task-follow-restore
+          path: site
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload experimental site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy experimental site
+        id: deployment
+        uses: actions/deploy-pages@v4
