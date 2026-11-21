@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Redeploy when the selected source branch receives content-only updates.
+# Redeploy when the selected MAP NAVI experiment receives updates, including pin-label CSS fixes.
 
 on:
   workflow_dispatch:
