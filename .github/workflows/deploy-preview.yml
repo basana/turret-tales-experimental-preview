@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Redeploy when the selected MAP NAVI experiment receives updates, including horizontal pin-label enforcement.
+# Redeploy when the selected MAP NAVI experiment receives updates, including nearest-market GPS tooltip fixes.
 
 on:
   workflow_dispatch:
