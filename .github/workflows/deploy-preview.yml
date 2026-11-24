@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Deploy latest source: basana/turret-tales-preview:map-navi/map-viewport-counter-layout (source commit 1a965f04; publish Castles label, emergency controls, and image assets).
+# Deploy latest source: basana/turret-tales-preview:map-navi/map-viewport-counter-layout (source commit 60dde250; connect Jesuitenplatz, Zentralplatz, and Schängelbar photo galleries).
 
 on:
   workflow_dispatch:
