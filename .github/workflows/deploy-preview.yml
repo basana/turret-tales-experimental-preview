@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Deploy latest source: basana/turret-tales-preview:map-navi/map-viewport-counter-layout (source commit 5f3884c2).
+# Deploy latest source: basana/turret-tales-preview:map-navi/map-viewport-counter-layout (source commit 724cf0cf).
 
 on:
   workflow_dispatch:
