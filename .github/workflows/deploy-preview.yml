@@ -1,5 +1,5 @@
 name: Deploy Experimental MAP NAVI Preview
-# Deploy latest source: basana/turret-tales-preview:map-navi-interaction-build-2026-11-25 (dark map, synchronized carousel and selection states; source commit 85372c87f353c0934ba9233d15c35da3f066d125).
+# Deploy latest source: basana/turret-tales-preview:map-navi-interaction-build-2026-11-25 (dark map, synchronized carousel and selection states; source commit ce25a3083cd2641aac7b24b94126d45b45ceea58).
 
 on:
   workflow_dispatch:
