@@ -1,5 +1,5 @@
 name: Deploy ordinary MAP NAVI preview
-# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/photos-popups-poi-route-20261126 (preview-only fixes; source commit 832c6e954d2a67cc23ff7ed7098abb3885d73ee5).
+# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/photos-popups-poi-route-20261126 (preview-only fixes; source commit 95e989bcd796ac16a9f35ef506a7ecdf00855005).
 
 on:
   workflow_dispatch:
