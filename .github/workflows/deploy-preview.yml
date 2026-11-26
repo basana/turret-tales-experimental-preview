@@ -1,5 +1,5 @@
-name: Deploy Experimental MAP NAVI Preview
-# Deploy latest source: basana/turret-tales-preview:map-navi-interaction-build-2026-11-25 (dark map, synchronized carousel and selection states; source commit f5f52eac2185694da9c8b659a335524721c34a3b).
+name: Deploy ordinary MAP NAVI preview
+# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/map-viewport-counter-layout (latest branch commit 356422cd96bb2dc150afe75343f8f2ecb6abe52f).
 
 on:
   workflow_dispatch:
@@ -22,11 +22,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Check out the selected MAP NAVI experiment
+      - name: Check out the ordinary MAP NAVI build
         uses: actions/checkout@v4
         with:
           repository: basana/turret-tales-preview
-          ref: map-navi-interaction-build-2026-11-25
+          ref: map-navi/map-viewport-counter-layout
           path: site
 
       - name: Configure GitHub Pages
@@ -34,7 +34,7 @@ jobs:
         with:
           enablement: true
 
-      - name: Upload experimental site
+      - name: Upload ordinary MAP NAVI preview
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
@@ -42,6 +42,6 @@ jobs:
       - name: Wait for Pages artifact registration
         run: sleep 15
 
-      - name: Deploy experimental site
+      - name: Deploy ordinary MAP NAVI preview
         id: deployment
         uses: actions/deploy-pages@v4
