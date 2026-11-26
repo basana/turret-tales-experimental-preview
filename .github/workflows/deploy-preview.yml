@@ -1,5 +1,5 @@
 name: Deploy ordinary MAP NAVI preview
-# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/ordinary-markets-entry-photo-fix-20261126 (preview-only fixes; source commit d9dc9a9c8d315624f9cce247cba6ad5d5b383f6d).
+# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/ordinary-markets-entry-photo-fix-20261126 (preview-only fixes; source commit 86ecbdaef585b86fee2ccc88d58c9c450b47842c).
 
 on:
   workflow_dispatch:
