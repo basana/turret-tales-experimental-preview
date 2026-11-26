@@ -1,5 +1,5 @@
 name: Deploy ordinary MAP NAVI preview
-# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/photos-popups-poi-route-20261126 (preview-only fixes; source commit c3dfe3f4d33d55f4e817fbb36346f0a0f2b9952b).
+# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/photos-popups-poi-route-20261126 (preview-only fixes; source commit 728bb910f2b8f3ce7cb62447b5802bf2683e4d71).
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: basana/turret-tales-preview
-          ref: c3dfe3f4d33d55f4e817fbb36346f0a0f2b9952b
+          ref: 728bb910f2b8f3ce7cb62447b5802bf2683e4d71
           path: site
 
       - name: Configure GitHub Pages
