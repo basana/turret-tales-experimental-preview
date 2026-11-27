@@ -1,5 +1,5 @@
 name: Deploy ordinary MAP NAVI preview
-# Deploy ordinary MAP NAVI source: basana/turret-tales-preview:map-navi/photos-popups-poi-route-20261126 (preview-only fixes; source commit f04ec6b3055ac85921a1b155341d3534f0b9fdfd).
+# Deploy emergency MAP NAVI preview only: basana/turret-tales-preview:map-navi/restore-berths-and-poi-dashes-20261127 (upcoming ship calls, all Koblenz berths, GPS-to-POI dashed routes, verified coordinates).
 
 on:
   workflow_dispatch:
@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: basana/turret-tales-preview
-          ref: f04ec6b3055ac85921a1b155341d3534f0b9fdfd
+          ref: 806d4f0ec1f9742c3d5a61b033433dc39ddf3620
           path: site
 
       - name: Configure GitHub Pages
