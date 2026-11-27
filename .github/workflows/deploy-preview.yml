@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: basana/turret-tales-preview
-          ref: 40b9dad01dbed3518226578cb21ee6f76746a8f5
+          ref: b44bc02fe9a5b6635e99e6810c7eecda1ca71797
           path: site
 
       - name: Configure GitHub Pages
